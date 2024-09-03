@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #051923;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.card-1 {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    background-color: #2b2c28;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #000;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    animation: backShadow 10s linear infinite;
+    transition: all 0.3s ease;
+}
+
+.card-1 h5 {
+    color: #ceff1a;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.card-1 h2 {
+    color: white;
+    font-weight: 900;
+    text-align: center;
+}
+
+.card-1 p {
+    color: white;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.card-1 .logo {
+    background: url('https://res.cloudinary.com/dkn6an4bw/image/upload/v1725343782/profile-pic_jwzmfx.png');
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+
+.card-1 .btn a {
+    text-decoration: none;
+    color: white;
+    box-shadow: 0px 0px 5px #000;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    background-color: #495057;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.card-1 .btn a:hover {
+    color: #000;
+    background-color: #6c757d;
+}
+
+.card-1 .btn a.I_1:hover {
+    background: url('https://res.cloudinary.com/dkn6an4bw/image/upload/v1725357776/github-mark-white_ughpxr.png') no-repeat 10px center;
+    background-size: 30px 30px;
+    background-position: 80px;
+}
+
+.card-1 .btn a.I_2:hover {
+    background: url('https://static.cdnlogo.com/logos/f/56/frontendmentor.svg') no-repeat 10px center;
+    background-size: 30px 30px;
+    background-position: 60px;
+}
+
+.card-1 .btn a.I_3:hover {
+    background: url('https://img.icons8.com/?size=256&id=13930&format=png') no-repeat 10px center;
+    background-size: 30px 30px;
+    background-position: 90px;
+}
+
+.card-1 .btn a.I_4:hover {
+    background: url('https://img.icons8.com/?size=256&id=5MQ0gPAYYx7a&format=png') no-repeat 10px center;
+    background-size: 30px 30px;
+    background-position: 90px;
+}
+
+.card-1 .btn a.I_5:hover {
+    background: url('https://img.icons8.com/?size=256&id=TEYr8ETaIfBJ&format=png') no-repeat 10px center;
+    background-size: 30px 30px;
+    background-position: 80px;
+}
+
+@media (max-width: 600px) {
+    .card-1 {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .card-1 h2 {
+        font-size: 1.5rem;
+    }
+
+    .card-1 h5 {
+        font-size: 1rem;
+    }
+
+    .card-1 p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-1 {
+        max-width: 350px;
+        padding: 20px;
+    }
+
+    .card-1 h2 {
+        font-size: 1.75rem;
+    }
+
+    .card-1 h5 {
+        font-size: 1rem;
+    }
+
+    .card-1 p {
+        font-size: 0.9rem;
+    }
+
+    .card-1 .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .card-1 .btn a {
+        padding: 10px 20px;
+    }
+}
+
+@keyframes backShadow {
+    0% {
+        box-shadow: 0px 0px 10px #fff;
+    }
+    50% {
+        box-shadow: 0px 0px 10px #6c757d;
+    }
+    100% {
+        box-shadow: 0px 0px 10px #adb5bd;
+    }
+}
